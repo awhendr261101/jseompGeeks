@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://chelsea-julie.github.io/all-images/images/cj.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- custom styling -->
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Products</title>
+</head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="https://chelsea-julie.github.io/all-images/images/cj.png" alt="logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="products.html">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="checkout.html">Checkout</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="admin.html">Admin</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+             
+          </div>
+        </div>
+      </nav>
+
+      <main class="container-fluid">
+        <h2 class="display-2">
+            Products
+        </h2>
+
+        <div class="row justify-content-end me-5 pb-5">
+            <div class="row pt-5" filter>
+              <div class="row col-lg-3">
+                <div class="col-sm-12 col-md-9 col-lg-9">
+                  <input class="form-control" type="text" placeholder="Search" >
+                </div>
+                <div class="col-sm-12 col-md-3 col-lg-3">
+                  <button type="submit" class="btn btn-block btn-primary">Search</button>
+                </div>
+              </div>
+            
+  
+            <div class="col" selectcon>
+
+              <select select>
+                <option value="empty">Filter by Catergory</option>
+                <option value="necklace">Necklace</option>
+                <option value="earing">Earing</option>
+                <option value="bracelate">Bracelate</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        
+
+        <section class="display">
+          <div class="row">
+            <div class="col-sm-12 col-md-4 col-lg-2">
+              <form>
+                <h4>Filter By Catergory</h4>
+                <input type="radio" id="necklace" name="catergory" value="necklace">
+                <label for="necklace">Necklace</label><br>
+                <input type="radio" id="earing" name="catergory" value="earing">
+                <label for="earing">Earings</label><br>
+                <input type="radio" id="bracelate" name="catergory" value="bracelates">
+                <label for="bracelates">Bracelates</label><br>
+                <input type="radio" id="rings" name="catergory" value="rings">
+                <label for="rings">Rings</label>
+
+                <hr>
+
+                <h4>Filter By Price</h4>
+                <input type="radio" id="low" name="price" value="low">
+                <label for="low">Low</label><br>
+                <input type="radio" id="medium" name="price" value="medium">
+                <label for="medium">Medium</label><br>
+                <input type="radio" id="high" name="price" value="high">
+                <label for="high">High</label><br>
+                <input type="radio" id="all" name="price" value="all">
+                <label for="all">All</label>
+              </form>
+
+            </div>
+
+            <div class="col-sm-12 col-md-8 col-lg-10">
+
+              <div class="row gap-3 justify-content-evenly " products>
+              </div>
+              <div class="show">
+                <input class="btn bg-dark" type="button" value="Show More" showmore> 
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      </main>
+      <footer class="container-fluid">
+        <div class="row">
+            <p class="lead">Copyright &copy; <span currentYear></span></p>
+        </div>
+      </footer>
+
+      <!-- bootstrap scrip -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+      <!-- cunstom script -->
+      <script src="../script/product.js"></script>
+</body>
+</html>
