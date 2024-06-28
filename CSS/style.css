@@ -33,6 +33,18 @@ body {
     }
     & .nav-link{
         color: white;
+        padding-inline: 1.5rem !important;
+    }
+    .active{
+      background-color: white !important;
+       color: #0f0d0d;
+    }
+    .nav-link:hover{
+       background-color: white !important;
+       color: #0f0d0d;
+       transform: scale(1.3);
+       transition: 1s;
+
     }
     background-color: #0f0d0d !important;
 }
@@ -41,6 +53,11 @@ img {
     aspect-ratio: 1;
     object-fit: cover;
     object-position: center;
+}
+
+img[alt="Levi"]{
+  align-self: center;
+  width: 20rem;
 }
 footer{
     margin-top: 20rem;
@@ -57,7 +74,7 @@ footer{
 /* Hero styling */
 [landing]{
     min-height: 100dvh;
-    background-image: url("../images/Mangekyo.jpg");
+    background-image: url("https://awhendr261101.github.io/allImages/images/Mangekyo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
